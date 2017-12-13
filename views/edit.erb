@@ -1,0 +1,21 @@
+<form action="/pizzas/<%= @pizza.id %>" method="POST">
+
+  <label for="first_name_input">First name:</label>
+  <input id="first_name_input" type="text" name="first_name" value="<%= @pizza.first_name %>">
+
+  <label for="last_name_input">Last name:</label>
+  <input id="last_name_input" type="text" name="last_name" value="<%= @pizza.last_name %>">
+
+  <label for="toppings_select">Topping:</label>
+  <select id="toppings_select" class="" name="topping">
+    <option value="Pepperoni">Pepperoni</option>
+    <option value="Margarita">Margarita</option>
+    <option value="Italian Sausage">Italian Sausage</option>
+  </select>
+
+  <label for="quantity_input">Quantity:</label>
+  <input id="quantity_input" type="number" min="1" name="quantity" value="<%= @pizza.quantity %>">
+
+  <input type="submit" name="" value="Update order">
+
+</form>
